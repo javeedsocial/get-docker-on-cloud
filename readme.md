@@ -16,4 +16,9 @@ execute shell script
 ```
 sh setup-docker-with-socket-permissions.sh
 ```
-
+check if docker is installed
+```
+docker -v
+```
+troubleshooting 
+- rerun script in case of key issues
