@@ -8,13 +8,10 @@ navigate to folder
 ```
 cd get-docker-on-cloud
 ```
-give execute permissions
+
+Run playbook and type Y after a while, re run playbook if it fails with any reason
 ```
-chmod +x setup-docker-with-socket-permissions.sh
-```
-execute shell script
-```
-sh setup-docker-with-socket-permissions.sh
+sudo ansible-playbook setup-docker.yaml
 ```
 check if docker is installed
 ```
