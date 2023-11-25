@@ -1,0 +1,13 @@
+---
+- name: Set Permissions on /var/run/docker.sock
+  hosts: your_target_servers
+  become: true  # Enable privilege escalation to execute commands as sudo
+
+  tasks:
+    - name: Ensure /var/run/docker.sock has the correct permissions
+      file:
+        path: /var/run/docker.sock
+        owner: root
+        group: docker
+        mode: '0777'
+      become: true
