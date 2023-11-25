@@ -1,6 +1,6 @@
 ---
 - name: Set Permissions on /var/run/docker.sock
-  hosts: your_target_servers
+  hosts: localhost
   become: true  # Enable privilege escalation to execute commands as sudo
 
   tasks:
