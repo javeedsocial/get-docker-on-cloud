@@ -20,6 +20,7 @@ docker -v
 troubleshooting 
 - rerun script in case of key issues
 
+Give socket permissions
 ```
 sudo ansible-playbook set_docker_sock_permissions.yml
 ```
